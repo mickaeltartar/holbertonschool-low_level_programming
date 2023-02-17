@@ -8,10 +8,11 @@
 
 int main(void)
 {
-int integerType;
-float floatType;
-double doubleType;
 char charType;
+int integerType;
+long longType;
+double doubleType;
+float floatType;
 printf("Size of Char Data Types in C = %2d bytes \n", sizeof(char));
 printf("Size of Int Data Types in C = %2d bytes \n", sizeof(int));
 printf("Size of Long Int Data Types in C = %2d bytes \n", sizeof(long int));
