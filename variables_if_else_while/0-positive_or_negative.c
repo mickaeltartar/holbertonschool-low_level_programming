@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 /**
- *main - calcul de zero
- *Return : alaways 0
+ *main - fonction principal void = zero argument
+ *Return: alaways 0
  * betty style doc for fun
  * fuction main goes there
  */
