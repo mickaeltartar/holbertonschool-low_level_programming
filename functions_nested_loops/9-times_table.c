@@ -1,5 +1,9 @@
 #include"main.h"
 
+/**
+ * time_table - prints les table de multiplications
+ */
+
 void times_table(void)
 	{
 	int num, mult, calc;
