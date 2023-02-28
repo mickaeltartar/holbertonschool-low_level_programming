@@ -9,13 +9,13 @@
 
 int _atoi(char *s)
 {
-	int num, index, index0, index1, sign;
+	int num, index, index0, index1, sign = 0;
 
 	for (index = 0; s[index] != '\0'; index++)
 	{
 		if (s[index] == '-')
 		{
-			sign *= -1;
+			sign++;
 		}
 	}
 
@@ -47,6 +47,3 @@ int _atoi(char *s)
 		}
 	return (num);
 }
-
-
-
