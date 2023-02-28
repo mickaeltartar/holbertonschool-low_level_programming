@@ -11,6 +11,7 @@ int _atoi(char *s)
 {
 	int num, index, index0, index1, sign = 0;
 
+
 	for (index = 0; s[index] != '\0'; index++)
 	{
 		if (s[index] == '-')
@@ -18,8 +19,7 @@ int _atoi(char *s)
 			sign++;
 		}
 	}
-
-	for (index = 0; index != '0'; index++)
+	for (index = 0; index != '\0'; index++)
 	{
 		if (s[index] >= '0' && s[index] <= '9')
 		{
