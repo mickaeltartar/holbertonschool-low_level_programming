@@ -1,49 +1,52 @@
 #include "main.h"
 
-/**
- * _atoi - print nums.
- * @s: The array value
- *
- * Return: num
- */
 
+/**
+ * _atoi - print nums
+ * @s: the array value
+ *
+ * Return: x
+ */
 int _atoi(char *s)
 {
-	int num, index, index0, index1, sign = 0;
+	int length;
+	int length2;
+	int length3;
+	int dash = 0;
+	int x;
 
-
-	for (index = 0; s[index] != '\0'; index++)
+	for (length = 0; s[length] != '\0'; length++)
 	{
-		if (s[index] == '-')
+		if (s[length] == '-')
 		{
-			sign++;
+			dash++;
 		}
 	}
-	for (index = 0; index != '\0'; index++)
+	for (length = 0; length != '\0'; length++)
 	{
-		if (s[index] >= '0' && s[index] <= '9')
+		if (s[length] >= '0' && s[length] <= '9')
 		{
 			break;
 		}
 	}
-	for (index0 = index; s[index0] != '\0'; index0++)
+	for (length2 = length; s[length2] != '\0'; length2++)
 	{
-		if (s[index0] <= '0' && s[index] >= '9')
+		if (s[length2] <= '0' && s[length] >= '9')
 		{
 			break;
 		}
 	}
-	if (sign % 2 == 0)
+	if (dash % 2 == 0)
 	{
-		for (index1 = index; s[index1] <= s[index0]; index1++)
+		for (length3 = length; s[length3] <= s[length2]; length3++)
 		{
-			num = ((10 * num + s[index1]) * -1);
+			x = ((10 * x + s[length3]) * -1);
 		}
 	}
 	else
-		for (index1 = index; s[index1] <= s[index0]; index1++)
+		for (length3 = length; s[length3] <= s[length2]; length3++)
 		{
-			num = (10 * num + s[index1]);
+			x = (10 * x + s[length3]);
 		}
-	return (num);
+	return (x);
 }
