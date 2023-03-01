@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncmp - function that compare a string
+ * _strcmp - function that compare a string
  * @s1: char to compare
  * @s2: char to compare
  * Return: int
@@ -20,7 +20,8 @@ int _strcmp(char *s1, char *s2)
 		}
 		diff = s1[i] - s2[i];
 		if (diff != 0)
+
 			break;
 	}
-	return(diff);
+	return (diff);
 }
