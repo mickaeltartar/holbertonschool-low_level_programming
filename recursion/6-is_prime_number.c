@@ -19,7 +19,7 @@ int is_prime(int n, int div)
 
 /**
  * is_prime_number - check if prime
- * @n: number 
+ * @n: number
  *
  * Return: 1 if prime else 0
  */
