@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* helper - helperfunction to find sqrt
-* @num: num to be square rooted
-* @root: root number
-*
-* Return: squareroot of number
-*/
+ * find_root - find the root
+ * @n: n
+ * @root: test this root
+ *
+ * Return: return -1
+ */
 
 int find_root(int n, int root)
 {
