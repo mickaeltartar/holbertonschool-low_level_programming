@@ -10,22 +10,21 @@
 
 int main(int argc, char *argv[])
 {
-	int num, sum = 0;
+	int num, digit, sum = 0;
 	char *ptr;
 
 	for (num = 1; num < argc; num++)
 	{
 		ptr = argv[num];
-		while (*ptr != '\0')
+		for (digit = 0; *(ptr + digit); digit++)
 		{
-			if (*ptr < '0' || *ptr < '9')
+			if (*(ptr + digit) < '0' || *(ptr + digit) > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			ptr++;
 		}
-		sum += atoi(argv[num]);
+		sum += atoi(ptr);
 	}
 	printf("%d\n", sum);
 	return (0);
