@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
+ * print_last_digit - print last digit
  *
+ * @n: modulo of last
  *
- *
+ * Return: last if positif
  */
 
 int print_last_digit(int n)
