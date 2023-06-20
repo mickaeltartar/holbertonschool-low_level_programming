@@ -3,7 +3,9 @@
 /**
  * _isalpha - check if c is lower or uppercase
  *
- * Return 1 if c is upper or lowercase
+ * @c: the caracter
+ *
+ * Return: 1 if c is upper or lowercase
  * otherwise return 0
  */
 
