@@ -2,7 +2,7 @@
 
 /**
  * print_to_98 - print all natural numbers start by n
- * @n: the number
+ * @n: the number.
  */
 
 void print_to_98(int n)
