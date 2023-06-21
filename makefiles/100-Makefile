@@ -22,7 +22,8 @@ clean:
 
 # deletes objects files
 
-oclean: clean oclean
+oclean:
+	$(RM) $(OBJ)
 
 # deletes all (tmp files, executable and object files)
 
