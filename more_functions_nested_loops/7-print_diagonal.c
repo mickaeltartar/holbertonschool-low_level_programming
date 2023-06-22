@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
+ * print_diagonal - draw a diagonal in the terminal
+ * @n: the '\'
  *
  */
 
@@ -27,5 +27,8 @@ void print_diagonal(int n)
 			row++;
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
