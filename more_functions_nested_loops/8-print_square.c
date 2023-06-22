@@ -13,10 +13,10 @@ void print_square(int size)
 	if (size > 0)
 	{
 
-		while(row < size)
+		while (row < size)
 		{
 			column = 0;
-			while(column < size)
+			while (column < size)
 			{
 				_putchar('#');
 				column++;
@@ -30,4 +30,3 @@ void print_square(int size)
 		_putchar('\n');
 	}
 }
-			
