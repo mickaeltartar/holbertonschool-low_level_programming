@@ -3,7 +3,7 @@
 /**
  * print_array - print array of integer
  * @a: integers
- * @n: numbers of integers 
+ * @n: numbers of integers
  */
 
 void print_array(int *a, int n)
@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 	{
 		if (index != (n - 1))
 		{
-			printf("%d, ",a[index]);
+			printf("%d, ", a[index]);
 		}
 		else
 		{
