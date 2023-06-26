@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
+ * print_array - print array of integer
+ * @a: integers
+ * @n: numbers of integers 
  */
 
 void print_array(int *a, int n)
