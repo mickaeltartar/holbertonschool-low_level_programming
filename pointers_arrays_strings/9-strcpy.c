@@ -21,18 +21,20 @@ int _strlen(char *s)
 /**
  * _strcpy - copy string from src to dest
  * @dest: the destination
- * @src: the source
+ * @src: the sourcei
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	int index = 0;
-	while(src[index] != '\0')
+
+	while (src[index] != '\0')
 	{
 		dest[index] = src[index];
 		index++;
 	}
 	dest[index] = '\0';
 
-	return(dest);
+	return (dest);
 }
