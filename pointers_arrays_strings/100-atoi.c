@@ -19,9 +19,9 @@ int _strlen(char *s)
 }
 
 /**
- * find_index_of_first_digit - find index of first digit
+ * Atoi - convert a string to an int
  * @s: string to search in
- * Return: index of the first digit
+ * Return: return an int
  */
 
 int _atoi(char *s)
