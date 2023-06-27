@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- * Atoi - convert a string to an int
+ * _atoi - convert a string to an int
  * @s: string to search in
  * Return: return an int
  */
