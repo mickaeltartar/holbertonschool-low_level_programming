@@ -8,22 +8,23 @@
 
 char *cap_string(char *s)
 {
-	char *str_ptr = s;
-	int index = 0;
+	int i = 0;
 
-	if (islower(*(str_ptr + index)))
-		(*(str_ptr + index)) = toupper(*(str_ptr + index));
-	index++;
-
-	while (*(str_ptr + index) != '\0')
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] = s[i] - 'a' + 'A';
+	i++;
+	while (s[i] != '\0')
 	{
-		if (islower(*(str_ptr + index)) && (isspace(*(str_ptr + index - 1))))
-		if (ispunct(*(str_ptr + index - 1)))
-			((*(str_ptr + index)) = toupper(*(str_ptr + index)));
-		if (*(str_ptr + index) == '\t')
-			(*(str_ptr + index) = ' ');
-		index++;
+		if ((s[i] >= 'a' && s[i] <= 'z')
+		   && (s[i - 1] == '\n' ||
+		       s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+		       s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+		       s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+		       s[i - 1] == '}'))
+			s[i] = s[i] - 'a' + 'A';
+		if (s[i] == '\t')
+			(s[i] = ' ');
+		i++;
 	}
-	return (str_ptr);
+	return (s);
 }
-
