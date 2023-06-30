@@ -10,14 +10,13 @@ void print_diagsums(int *a, int size)
 {
 	int main_diag_sum = 0;
 	int second_diag_sum = 0;
+	int index;
 	int row = 0;
-	int index = 0;
-	int *ptr_a = a;
 
 	while (row < size)
 	{
 		index = (row * size) + row;
-		main_diag_sum += (*ptr_a + index);
+		main_diag_sum += a[index];
 		row++;
 	}
 
@@ -25,7 +24,7 @@ void print_diagsums(int *a, int size)
 	while (row <= size)
 	{
 		index = (row * size) - row;
-		second_diag_sum += (*ptr_a + index);
+		second_diag_sum += a[index];
 		row++;
 	}
 
