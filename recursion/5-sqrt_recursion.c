@@ -4,7 +4,7 @@
  * find_root - root of n
  * @n: square root
  * @root: root
- *
+ * Return: -1 if not a natural square root
  */
 
 int find_root(int n, int root)
