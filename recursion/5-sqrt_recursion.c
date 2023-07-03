@@ -9,13 +9,13 @@
 
 int find_root(int n, int root)
 {
+	if (root * root > n)
+		return (-1);
+
 	if (root * root == n)
 		return (root);
 
-	if (root <= 0)
-		return (-1);
-
-	return (find_root(n, root - 1));
+	return (find_root(n, root + 1));
 }
 
 /**
@@ -28,9 +28,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-
-	if (n == 0 || n == 1)
-		return (n);
-
-	return (find_root(n, n / 2));
+	return (find_root(n, 0));
 }
