@@ -11,24 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int result;
-
-	i = 1;
-	result = 1;
 
 	if (argc != 3)
 	{
 		printf("error\n");
 		return (1);
 	}
-
-	while (i < argc)
-	{
-		result *= atoi(argv[i]);
-		i++;
-	}
-
-	printf("%d\n", result);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
