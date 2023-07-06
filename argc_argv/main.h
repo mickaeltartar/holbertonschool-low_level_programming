@@ -5,7 +5,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <ctype.h>
 /****** Prototypes ******/
 
 int _putchar(char c);
