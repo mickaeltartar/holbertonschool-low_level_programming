@@ -1,6 +1,12 @@
 #ifndef DOG_H_
 #define DOG_H_
 
+/****** libraries ******/
+
+#include <stdio.h>
+
+/****** Structure ******/
+
 /**
  * dog_t - Typedef for struct dog
  */
@@ -18,5 +24,9 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/****** prototypes ******/
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
