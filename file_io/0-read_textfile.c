@@ -2,7 +2,7 @@
 
 /**
  * read_textfile - read a text file and print it in to the POSIX output
- * @fileName: the given file
+ * @filename: the given file
  * @letters: is the number of letters should read
  * Return: the actual number of letters to be read
  */
