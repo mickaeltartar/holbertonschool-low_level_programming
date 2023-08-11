@@ -31,11 +31,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->next;
 	}
-	newNode = malloc(sizeof(hash_table_t));
+	newNode = malloc(sizeof(hash_node_t));
 	if (newNode == 0)
 		return (0);
 	newNode->value = strdup(value);
-	if (newNode->value == 0)
+	if (newNode->value == NULL)
 	{
 		free(newNode);
 		free(newNode->key);
