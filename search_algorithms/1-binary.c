@@ -13,7 +13,7 @@ void printArray(int *array, size_t left, size_t right)
 
 	printf("Searching in array:");
 	for (index = left; index < right; index++)
-		printf(" %d", array[index]);
+		printf(" %d,", array[index]);
 	printf(" %d\n", array[index]);
 }
 
